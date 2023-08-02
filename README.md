@@ -326,7 +326,7 @@ class EmailSender {
 }
 ```
 
-* Open/Closed Principle (OCP):
+* # Open/Closed Principle (OCP):
 
 ```php
 
@@ -359,7 +359,7 @@ class PayPalPayment implements PaymentGateway {
 }
 ```
 
-* Liskov Substitution Principle (LSP):
+* # Liskov Substitution Principle (LSP):
  
 ```php
 
@@ -393,7 +393,7 @@ class Penguin implements Flyable {
 }
 ```
 
-* Interface Segregation Principle (ISP):
+* # Interface Segregation Principle (ISP):
 ```php
 
 // Bad example: A large, general-purpose interface
@@ -416,7 +416,7 @@ interface Sleeper {
     public function sleep();
 }
 ```
-* Dependency Inversion Principle (DIP):
+* # Dependency Inversion Principle (DIP):
 ```php
 
 // Bad example: High-level module depending on low-level module directly
@@ -469,7 +469,7 @@ class UserService {
 
 
 User
-* in php what is superclass
+* # in php what is superclass
 ChatGPT
 * In PHP, a superclass, also known as a parent class or base class, is a class that is extended or inherited by other classes. When a class inherits from another class, it gains access to all the properties and methods of the superclass. The class that inherits from the superclass is called a subclass or child class.
 
