@@ -99,6 +99,7 @@ class PayPal implements PaymentGateway {
         // Implementation for PayPal refund
     }
 }
+```
 Multiple Interfaces:
 A class can implement multiple interfaces by separating them with a comma.
 ```php
