@@ -1,7 +1,6 @@
 # php-oop-and-solid-principle
 Understand php OOP and SOLID Concept with example
 
-
 explain abstract in php in easy term 
 
 ChatGPT
