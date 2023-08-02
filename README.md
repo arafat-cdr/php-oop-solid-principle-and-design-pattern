@@ -3,7 +3,7 @@ Understand php OOP and SOLID Concept with example
 
 explain abstract in php in easy term 
 
-ChatGPT
+
 Sure! In PHP, an abstract is a special keyword that you can use when defining classes and methods. An abstract class or method is something that serves as a blueprint or template for other classes to follow, but it cannot be directly used to create objects (instances) on its own.
 
 Here's a simple explanation:
