@@ -439,6 +439,14 @@ class UserService {
     }
 }
 
+# ---------------------------------------------------------------
+
+function pr($data){
+	echo '<pre>';
+	print_r($data);
+	echo '</pre>';
+}
+
 // Good example: High-level module depends on an abstraction
 interface LoggerInterface {
     public function log($message);
@@ -447,13 +455,23 @@ interface LoggerInterface {
 class FileLogger implements LoggerInterface {
     public function log($message) {
         // Code to log the message to a file
+        echo '<br/> I am file logger </br>';
     }
+}
+
+class abc{
+	function test(){
+		echo 'hlw ';
+	}
 }
 
 class UserService {
     private $logger;
 
     public function __construct(LoggerInterface $logger) {
+
+    	pr( $logger );
+
         $this->logger = $logger; // High-level module depends on the abstraction (LoggerInterface)
     }
 
@@ -462,6 +480,22 @@ class UserService {
         $this->logger->log('User created'); // Dependency on the abstraction (LoggerInterface)
     }
 }
+
+# It will throw Fatal error ... 
+# it is wrong bcs we do not have any implements of
+# LoggerInterface
+// $obj = new UserService( new abc () );
+
+// $obj->createUser(1);
+
+# This is the correct way to do
+# Because FileLogger has implementations of LoggerInterface
+
+$obj = new UserService( new FileLogger () );
+
+$obj->createUser(1);
+
+# ----------------------------------------------------------------
 ```
 * These simple PHP code examples demonstrate how you can apply each SOLID principle to create more maintainable and flexible code. Remember, the SOLID principles are guidelines, and you can adapt them to your specific project needs. The key is to promote modularity, loose coupling, and clear responsibilities in your code.
 
