@@ -68,12 +68,12 @@ class Dog extends Animal {
 * Here's a breakdown of the two key aspects of the Open/Closed Principle:
 
 
-### ** :four_leaf_clover: 1. Open for Extension:
+### ** :herb: 1. Open for Extension:
 * This means that your code should be designed in a way that allows you to add new features or functionality without modifying the existing code. You achieve this by using techniques like inheritance, interfaces, or composition.
 
 * For example, if you have a class that performs some specific operations, and you want to add more operations to it, you should create a new class that extends the original class or implements an interface, and then add the new functionality in the derived class. This way, the original class remains untouched.
 
-### ** :four_leaf_clover: 2.Closed for Modification:
+### ** :herb: 2.Closed for Modification:
 * Once a class or module is stable and working correctly, you should refrain from making changes to its existing code. Modifying existing code can introduce bugs and break existing functionality. Instead, focus on adding new code in a way that doesn't alter the original behavior of the class or module.
 
 * By following the Open/Closed Principle, your code becomes more maintainable, reusable, and less prone to introducing unintended side effects. When you need to add new features or change the behavior, you can create new classes or modules that build upon the existing ones, without having to modify the already tested and working code.
